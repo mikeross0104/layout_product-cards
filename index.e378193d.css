@@ -1,0 +1,135 @@
+html {
+  font-family: Roboto, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bgc: #fff;
+  --text-color: #616070;
+  --btn-color: #00acdc;
+  --btn-color-hover: #fff;
+  --main-color: #060b35;
+}
+
+.card {
+  background-color: var(--bgc);
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.card__content {
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px 16px 16px;
+  display: flex;
+}
+
+.card__image {
+  width: 160px;
+  height: 134px;
+  margin: 0 auto 40px;
+}
+
+.card__title {
+  color: var(--main-color);
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.card__product-code {
+  color: var(--text-color);
+  margin: 0 0 16px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.card__rating {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.card__stars {
+  gap: 4px;
+  display: flex;
+}
+
+.card__reviews {
+  color: var(--main-color);
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.card__price {
+  text-align: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.card__price-text {
+  color: var(--text-color);
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+}
+
+.card__price-number {
+  color: var(--main-color);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card .stars__star {
+  background-image: url("star-active.2be54011.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+.card .stars__star:nth-child(n+5) {
+  background-image: url("star.fa806e3c.svg");
+}
+
+.card .button {
+  background-color: var(--btn-color);
+  color: var(--bgc);
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  width: 166px;
+  height: 40px;
+  margin-top: 16px;
+  padding: 0;
+  font-family: Roboto, serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.card .button:hover {
+  color: var(--btn-color);
+  background-color: var(--btn-color-hover);
+  border: 1px solid var(--btn-color);
+}
+
+/*# sourceMappingURL=index.e378193d.css.map */
